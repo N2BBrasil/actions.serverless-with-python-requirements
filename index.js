@@ -12,6 +12,7 @@ async function installServerlessAndPlugins() {
   await exeq(
     'echo Installing Serverless and plugins...',
     'npm i serverless -g',
+    'npm i serverless-plugin-composed-vars',
     'npm i serverless-python-requirements',
     'npm i serverless-plugin-canary-deployments'
   )
